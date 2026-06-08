@@ -1,81 +1,75 @@
-# 📚 Biblioteca Digital — React + Vite + JSON Server
+# Biblioteca Digital - React + Vite + JSON Server
 
-Aplicação web para cadastro e listagem de livros, desenvolvida com React + Vite consumindo uma API fake com JSON Server.
+Aplicacao web para cadastro e listagem de livros, desenvolvida com React + Vite consumindo uma API fake com JSON Server.
 
-## 🚀 Como rodar o projeto
+## Como rodar o projeto
 
-### 1. Instale as dependências
+### 1. Instale as dependencias
+
 ```bash
 npm install
 ```
 
-### 2. Inicie o JSON Server (API fake)
-Abra **um terminal** e execute:
+### 2. Inicie o JSON Server
+
+Abra um terminal e execute:
+
 ```bash
 npm run server
 ```
-O servidor vai rodar em: **http://localhost:3001**
 
-### 3. Inicie o React (em outro terminal)
+A API vai rodar em: `http://localhost:3001`
+
+### 3. Inicie o React
+
+Em outro terminal, execute:
+
 ```bash
 npm run dev
 ```
-A aplicação vai rodar em: **http://localhost:5173**
 
----
+A aplicacao vai rodar em: `http://localhost:5173`
 
-## 📁 Estrutura do projeto
+Se a porta 5173 ja estiver ocupada, o Vite mostra outra URL no terminal, por exemplo `http://localhost:5174` ou `http://localhost:5175`.
 
-```
-biblioteca/
-├── db.json                   # Banco de dados fake (JSON Server)
-├── index.html
-├── vite.config.js
-├── package.json
-└── src/
-    ├── main.jsx
-    ├── App.jsx               # Componente principal (useState + useEffect + fetch)
-    ├── App.module.css
-    ├── index.css
-    └── components/
-        ├── BookForm.jsx      # Formulário de cadastro (POST)
-        ├── BookForm.module.css
-        ├── BookList.jsx      # Listagem de livros (GET)
-        └── BookList.module.css
-```
-
----
-
-## ✅ Requisitos atendidos
+## Requisitos atendidos
 
 | Requisito | Status |
-|-----------|--------|
-| Projeto criado com React + Vite | ✅ |
-| Arquivo `db.json` configurado | ✅ |
-| JSON Server funcionando localmente | ✅ |
-| Listagem de dados com `fetch` | ✅ |
-| Uso de `useState` e `useEffect` | ✅ |
-| Formulário com 4 campos (título, autor, ano, gênero) | ✅ |
-| Cadastro via requisição `POST` | ✅ |
-| Atualização da lista após cadastro | ✅ |
-| Interface organizada e responsiva | ✅ |
+| --- | --- |
+| Projeto criado com React + Vite | OK |
+| Arquivo `db.json` configurado | OK |
+| JSON Server funcionando localmente | OK |
+| Listagem de dados com `fetch` | OK |
+| Uso de `useState` e `useEffect` | OK |
+| Formulario com quatro campos | OK |
+| Cadastro via requisicao `POST` | OK |
+| Atualizacao da lista apos cadastro | OK |
+| Interface organizada e responsiva | OK |
 
----
+## Endpoints da API
 
-## 🛠 Tecnologias
-
-- **React 18** — biblioteca de UI
-- **Vite** — bundler e servidor de desenvolvimento
-- **JSON Server** — API REST fake para desenvolvimento
-- **CSS Modules** — estilos encapsulados por componente
-
----
-
-## 📝 Endpoints da API
-
-| Método | Rota | Descrição |
-|--------|------|-----------|
+| Metodo | Rota | Descricao |
+| --- | --- | --- |
 | GET | `/livros` | Lista todos os livros |
 | POST | `/livros` | Cadastra novo livro |
-| PUT | `/livros/:id` | Atualiza livro |
-| DELETE | `/livros/:id` | Remove livro |
+| DELETE | `/livros/:id` | Exclui um livro |
+
+## Estrutura principal
+
+```text
+biblioteca/
+- db.json
+- index.html
+- package.json
+- vite.config.js
+- src/
+  - main.jsx
+  - App.jsx
+  - App.module.css
+  - index.css
+  - components/
+    - BookForm.jsx
+    - BookForm.module.css
+    - BookList.jsx
+    - BookList.module.css
+```
