@@ -2,7 +2,7 @@
   "livros": [
     {
       "id": 1,
-      "titulo": "O Senhor dos Anéis",
+      "titulo": "O Senhor dos Aneis",
       "autor": "J.R.R. Tolkien",
       "ano": "1954",
       "genero": "Fantasia"
@@ -23,17 +23,17 @@
     },
     {
       "id": 4,
-      "titulo": "Grande Sertão: Veredas",
-      "autor": "João Guimarães Rosa",
+      "titulo": "Grande Sertao: Veredas",
+      "autor": "Joao Guimaraes Rosa",
       "ano": "1956",
       "genero": "Literatura Brasileira"
     },
     {
-      "titulo": "48 leis do poder ",
-      "autor": "nao sei",
+      "id": 5,
+      "titulo": "As 48 Leis do Poder",
+      "autor": "Robert Greene",
       "ano": "2022",
-      "genero": "persuasao",
-      "id": 5
+      "genero": "Desenvolvimento pessoal"
     }
   ]
 }
